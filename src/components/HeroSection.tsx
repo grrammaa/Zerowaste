@@ -1,10 +1,7 @@
 import { useLang } from '@/contexts/LangContext';
 import heroBg from '@/assets/hero-bg.jpg';
 import logo from '@/assets/logo.png';
-<<<<<<< HEAD
 import Navbar from '@/components/Navbar';
-=======
->>>>>>> 2700d210ff8d54ea32bff9869311f673153ee822
 import prezentareRomana from '@/assets/prezentareRomana.pdf?url';
 import prezentareEngleza from '@/assets/prezentareEngleza.pdf?url';
 
