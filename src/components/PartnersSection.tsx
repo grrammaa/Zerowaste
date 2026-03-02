@@ -1,15 +1,10 @@
 import { useLang } from '@/contexts/LangContext';
-<<<<<<< HEAD
 import logoCjIlfov from '@/assets/logo_cj_ilfov_text_alb.png';
 import logoCernica from '@/assets/logo_cernica_fundal_transparent_text_alb.png';
 import logoUAUIM from '@/assets/UAUIM.png';
 import logoRUD from '@/assets/RUD.png';
 import logoIlfovImpreuna from '@/assets/logo_ilfov_impreuna_text_alb.png';
 import logoReplastic from '@/assets/logo_replast_text_alb.png';
-=======
-import logoCjIlfov from '@/assets/logo_cj_ilfov.png';
-import logoCernica from '@/assets/logo_cernica.jpeg';
->>>>>>> 2700d210ff8d54ea32bff9869311f673153ee822
 
 const PartnersSection = () => {
   const { t } = useLang();
@@ -20,7 +15,6 @@ const PartnersSection = () => {
     { icon: '⚙️', titleRo: 'Tehnologie & Educație', titleEn: 'Technology & Education', descRo: 'Furnizori de soluții smart, energie regenerabilă, monitorizare IoT sau programe educaționale de mediu. Integrare directă în proiect.', descEn: 'Providers of smart solutions, renewable energy, IoT monitoring or environmental education programs. Direct integration into the project.' },
   ];
 
-<<<<<<< HEAD
   const institutionalPartners = [
     { src: logoCjIlfov, alt: 'Consiliul Județean Ilfov', bg: 'transparent', filter: '', h: '115px', href: 'https://www.cjilfov.ro' },
     { src: logoCernica, alt: 'Comuna Cernica', bg: 'transparent', filter: '', h: '110px', href: 'https://cernica.informare.ro/' },
@@ -31,11 +25,6 @@ const PartnersSection = () => {
   const exhibitionPartners = [
     { src: logoReplastic, alt: 'Replastic', bg: 'transparent', filter: '', h: '65px', href: 'https://replastic.ro' },
     { src: logoRUD, alt: 'RUD', bg: 'transparent', filter: '', h: '60px', href: 'https://www.mobilierurbanmodern.ro' },
-=======
-  const partnerLogos = [
-    { src: logoCjIlfov, alt: 'Consiliul Județean Ilfov', bg: 'white' },
-    { src: logoCernica, alt: 'Comuna Cernica', bg: 'white' },
->>>>>>> 2700d210ff8d54ea32bff9869311f673153ee822
   ];
 
   return (
@@ -72,7 +61,6 @@ const PartnersSection = () => {
 
         {/* Partner logos */}
         <div className="reveal mt-16 pt-10" style={{ borderTop: '1px solid hsl(77 69% 58% / 0.12)' }}>
-<<<<<<< HEAD
           <div className="mb-12">
             <p className="text-[10px] font-semibold tracking-[0.18em] uppercase mb-8" style={{ color: 'hsl(40 33% 93% / 0.3)' }}>
               {t('Parteneri instituționali', 'Institutional partners')}
@@ -125,25 +113,6 @@ const PartnersSection = () => {
                 </a>
               ))}
             </div>
-=======
-          <p className="text-[10px] font-semibold tracking-[0.18em] uppercase mb-8" style={{ color: 'hsl(40 33% 93% / 0.3)' }}>
-            {t('Parteneri instituționali', 'Institutional partners')}
-          </p>
-          <div className="flex flex-wrap gap-6 items-center">
-            {partnerLogos.map((logo, i) => (
-              <div
-                key={i}
-                className="flex items-center justify-center px-5 py-3 rounded-xl transition-opacity duration-200 hover:opacity-90"
-                style={{ background: logo.bg }}
-              >
-                <img
-                  src={logo.src}
-                  alt={logo.alt}
-                  style={{ height: '56px', width: 'auto', objectFit: 'contain' }}
-                />
-              </div>
-            ))}
->>>>>>> 2700d210ff8d54ea32bff9869311f673153ee822
           </div>
         </div>
       </div>
