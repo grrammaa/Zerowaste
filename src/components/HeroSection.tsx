@@ -15,13 +15,11 @@ const HeroSection = () => {
 
   return (
     <section id="hero" className="relative min-h-screen flex flex-col justify-end overflow-hidden pb-20">
-<<<<<<< HEAD
       {/* Navbar overlaid on hero */}
       <div className="absolute top-0 left-0 right-0 z-50">
         <Navbar />
       </div>
-=======
->>>>>>> 2700d210ff8d54ea32bff9869311f673153ee822
+
       {/* Background */}
       <div
         className="absolute inset-0"
