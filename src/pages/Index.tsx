@@ -1,5 +1,9 @@
 import { useReveal } from '@/hooks/useReveal';
 import { LangProvider } from '@/contexts/LangContext';
+<<<<<<< HEAD
+=======
+import Navbar from '@/components/Navbar';
+>>>>>>> 2700d210ff8d54ea32bff9869311f673153ee822
 import HeroSection from '@/components/HeroSection';
 import ContextSection from '@/components/ContextSection';
 import Divider from '@/components/Divider';
@@ -17,6 +21,11 @@ const Index = () => {
 
   return (
     <LangProvider>
+<<<<<<< HEAD
+=======
+      {/* Navbar fixed top — must be outside the scrollable div */}
+      <Navbar />
+>>>>>>> 2700d210ff8d54ea32bff9869311f673153ee822
       <div ref={revealRef}>
         <HeroSection />
         <ContextSection />

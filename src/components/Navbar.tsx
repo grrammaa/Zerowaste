@@ -1,5 +1,9 @@
 import { createPortal } from 'react-dom';
+<<<<<<< HEAD
 import logoCjIlfov from '@/assets/logo_cj_ilfov_text_alb.png';
+=======
+import logoCjIlfov from '@/assets/logo_cj_ilfov.png';
+>>>>>>> 2700d210ff8d54ea32bff9869311f673153ee822
 import { useLang } from '@/contexts/LangContext';
 
 const Navbar = () => {
@@ -7,6 +11,7 @@ const Navbar = () => {
 
     const navbar = (
         <nav
+<<<<<<< HEAD
             className="flex items-center justify-between px-3 md:px-8 py-4 bg-transparent relative z-[9999]"
         >
             {/* CJ Ilfov logo in a larger, premium transparent box */}
@@ -15,6 +20,39 @@ const Navbar = () => {
                     src={logoCjIlfov}
                     alt="Consiliul Județean Ilfov"
                     className="h-[105px] md:h-[110px] w-auto object-contain block"
+=======
+            style={{
+                position: 'fixed',
+                top: 0,
+                left: 0,
+                right: 0,
+                zIndex: 9999,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                padding: '16px 32px',
+                background: 'transparent',
+                pointerEvents: 'none',
+            }}
+        >
+            {/* CJ Ilfov logo in a larger, premium white box */}
+            <div
+                style={{
+                    background: 'white',
+                    borderRadius: '12px',
+                    padding: '10px 16px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    pointerEvents: 'auto',
+                    boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1)',
+                    border: '1px solid rgba(255, 255, 255, 0.1)',
+                }}
+            >
+                <img
+                    src={logoCjIlfov}
+                    alt="Consiliul Județean Ilfov"
+                    style={{ height: '52px', width: 'auto', objectFit: 'contain', display: 'block' }}
+>>>>>>> 2700d210ff8d54ea32bff9869311f673153ee822
                 />
             </div>
 
@@ -27,6 +65,10 @@ const Navbar = () => {
                     border: '1px solid rgba(159, 214, 83, 0.3)',
                     borderRadius: '8px',
                     overflow: 'hidden',
+<<<<<<< HEAD
+=======
+                    pointerEvents: 'auto',
+>>>>>>> 2700d210ff8d54ea32bff9869311f673153ee822
                     boxShadow: '0 4px 15px rgba(0, 0, 0, 0.2)',
                 }}
                 role="navigation"
@@ -70,7 +112,12 @@ const Navbar = () => {
         </nav>
     );
 
+<<<<<<< HEAD
     return navbar;
+=======
+    // Using Portal to mount directly to document.body to ensure it stays fixed relative to the viewport
+    return typeof document !== 'undefined' ? createPortal(navbar, document.body) : null;
+>>>>>>> 2700d210ff8d54ea32bff9869311f673153ee822
 };
 
 export default Navbar;

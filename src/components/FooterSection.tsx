@@ -1,5 +1,6 @@
 import { useLang } from '@/contexts/LangContext';
 import { Link } from 'react-router-dom';
+<<<<<<< HEAD
 import logoCjIlfov from '@/assets/logo_cj_ilfov_text_alb.png';
 import logoCernica from '@/assets/logo_cernica_fundal_transparent_text_alb.png';
 import logoUAUIM from '@/assets/UAUIM.png';
@@ -18,6 +19,14 @@ const institutionalPartners = [
 const exhibitionPartners = [
   { src: logoReplastic, alt: 'Replastic', bg: 'transparent', filter: '', h: '50px', href: 'https://replastic.ro' },
   { src: logoRUD, alt: 'RUD', bg: 'transparent', filter: '', h: '45px', href: 'https://www.mobilierurbanmodern.ro' },
+=======
+import logoCjIlfov from '@/assets/logo_cj_ilfov.png';
+import logoCernica from '@/assets/logo_cernica.jpeg';
+
+const partnerLogos = [
+  { src: logoCjIlfov, alt: 'Consiliul Județean Ilfov' },
+  { src: logoCernica, alt: 'Comuna Cernica' },
+>>>>>>> 2700d210ff8d54ea32bff9869311f673153ee822
 ];
 
 const FooterSection = () => {
@@ -28,7 +37,11 @@ const FooterSection = () => {
       <div className="container">
         <div className="flex justify-between items-start gap-12 flex-wrap mb-12 max-md:flex-col">
           <div className="max-w-[280px]">
+<<<<<<< HEAD
             <img src={logoMain} alt="Zer0 Waste Natural Park" style={{ height: '64px', width: 'auto', objectFit: 'contain', marginBottom: '10px' }} />
+=======
+            <div className="font-head text-lg font-bold mb-2" style={{ color: 'white' }}>Parcul Natural Zer0 Waste</div>
+>>>>>>> 2700d210ff8d54ea32bff9869311f673153ee822
             <div className="text-[0.83rem] text-muted-foreground font-light" dangerouslySetInnerHTML={{
               __html: t(
                 'Pădurea Căldăraru, Cernica, județul Ilfov<br/>Proiect inițiat și organizat de Consiliul Județean Ilfov',
@@ -46,6 +59,7 @@ const FooterSection = () => {
 
         {/* Partners logos */}
         <div className="py-8 mb-6" style={{ borderTop: '1px solid hsl(40 33% 93% / 0.06)', borderBottom: '1px solid hsl(40 33% 93% / 0.06)' }}>
+<<<<<<< HEAD
           <div className="mb-10">
             <p className="text-[0.75rem] tracking-[0.1em] uppercase mb-6 flex-shrink-0" style={{ color: 'hsl(40 33% 93% / 0.25)' }}>
               {t('Parteneri instituționali', 'Institutional partners')}
@@ -98,6 +112,31 @@ const FooterSection = () => {
                 </a>
               ))}
             </div>
+=======
+          <p className="text-[0.75rem] tracking-[0.1em] uppercase mb-6 flex-shrink-0" style={{ color: 'hsl(40 33% 93% / 0.25)' }}>
+            {t('Parteneri', 'Partners')}
+          </p>
+          <div className="flex flex-wrap gap-4 items-center">
+            {partnerLogos.map((logo, i) => (
+              <div
+                key={i}
+                className="flex items-center justify-center px-4 py-2 rounded-lg"
+                style={{ background: 'white' }}
+              >
+                <img
+                  src={logo.src}
+                  alt={logo.alt}
+                  style={{ height: '52px', width: 'auto', objectFit: 'contain' }}
+                />
+              </div>
+            ))}
+            {/* Text-only partners without logos */}
+            {['UAUIM – Ion Mincu', 'Ilfov Împreună'].map((name) => (
+              <span key={name} className="text-[0.8rem] font-medium tracking-[0.04em] px-3 py-1.5 rounded-sm" style={{ color: 'hsl(40 33% 93% / 0.35)', border: '1px solid hsl(40 33% 93% / 0.08)' }}>
+                {name}
+              </span>
+            ))}
+>>>>>>> 2700d210ff8d54ea32bff9869311f673153ee822
           </div>
         </div>
 

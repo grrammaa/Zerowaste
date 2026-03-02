@@ -70,7 +70,11 @@ const Privacy = () => {
                 ['Operator', 'Consiliul Județean Ilfov'],
                 ['Sediu', 'Șos. București–Urziceni nr. 13, Ilfov'],
                 ['Email contact', <a href="mailto:zerowaste@cjilfov.ro" className="text-lime">zerowaste@cjilfov.ro</a>],
+<<<<<<< HEAD
                 ['Responsabil protecția datelor (DPO)', <a href="mailto:zerowaste@cjilfov.ro" className="text-lime">zerowaste@cjilfov.ro</a>],
+=======
+                ['Responsabil protecția datelor (DPO)', <a href="mailto:dpo@cjilfov.ro" className="text-lime">dpo@cjilfov.ro</a>],
+>>>>>>> 2700d210ff8d54ea32bff9869311f673153ee822
                 ['Autoritatea de supraveghere', <span>ANSPDCP – <a href="https://www.dataprotection.ro" target="_blank" rel="noopener" className="text-lime">www.dataprotection.ro</a></span>],
               ]}
             />
@@ -113,7 +117,11 @@ const Privacy = () => {
               <li><strong className="text-cream font-semibold">Dreptul de retragere a consimțământului</strong> – oricând, fără a afecta legalitatea prelucrărilor anterioare.</li>
               <li><strong className="text-cream font-semibold">Dreptul de a depune plângere</strong> la ANSPDCP (<a href="https://www.dataprotection.ro" target="_blank" rel="noopener" className="text-lime">www.dataprotection.ro</a>).</li>
             </ul>
+<<<<<<< HEAD
             <p className="text-muted-foreground font-light mb-3">Pentru exercitarea oricărui drept, scrieți la: <a href="mailto:zerowaste@cjilfov.ro" className="text-lime">zerowaste@cjilfov.ro</a>. Vom răspunde în termen de 30 de zile.</p>
+=======
+            <p className="text-muted-foreground font-light mb-3">Pentru exercitarea oricărui drept, scrieți la: <a href="mailto:dpo@cjilfov.ro" className="text-lime">dpo@cjilfov.ro</a> sau <a href="mailto:zerowaste@cjilfov.ro" className="text-lime">zerowaste@cjilfov.ro</a>. Vom răspunde în termen de 30 de zile.</p>
+>>>>>>> 2700d210ff8d54ea32bff9869311f673153ee822
 
             <SectionTitle>6. Securitate</SectionTitle>
             <p className="text-muted-foreground font-light mb-3">CJ Ilfov aplică măsuri tehnice și organizatorice adecvate pentru protejarea datelor: conexiune HTTPS, acces restricționat pe bază de rol, stocarea pe infrastructura securizată a CJ Ilfov sau a furnizorilor agreeați. În caz de incident de securitate cu risc ridicat, veți fi notificat conform prevederilor art. 34 GDPR.</p>
@@ -122,7 +130,11 @@ const Privacy = () => {
             <p className="text-muted-foreground font-light mb-3">Această politică poate fi actualizată. Versiunea în vigoare este întotdeauna disponibilă la <Link to="/privacy" className="text-lime">zerowaste.cjilfov.ro/privacy</Link>. Modificările semnificative vor fi comunicate prin email dacă deținem adresa dumneavoastră.</p>
 
             <SectionTitle>8. Contact</SectionTitle>
+<<<<<<< HEAD
             <p className="text-muted-foreground font-light mb-3">Pentru protecția datelor sau întrebări despre proiect: <a href="mailto:zerowaste@cjilfov.ro" className="text-lime">zerowaste@cjilfov.ro</a></p>
+=======
+            <p className="text-muted-foreground font-light mb-3">Pentru orice întrebare legată de protecția datelor: <a href="mailto:dpo@cjilfov.ro" className="text-lime">dpo@cjilfov.ro</a><br />Pentru întrebări despre proiect: <a href="mailto:zerowaste@cjilfov.ro" className="text-lime">zerowaste@cjilfov.ro</a></p>
+>>>>>>> 2700d210ff8d54ea32bff9869311f673153ee822
           </div>
         )}
 
@@ -176,7 +188,11 @@ const Privacy = () => {
             <p className="text-muted-foreground font-light mb-3">Această politică poate fi actualizată pentru a reflecta schimbări în tehnologiile utilizate sau în cerințele legale. Verificați periodic pagina <Link to="/cookies" className="text-lime">zerowaste.cjilfov.ro/cookies</Link>.</p>
 
             <SectionTitle>7. Contact</SectionTitle>
+<<<<<<< HEAD
             <p className="text-muted-foreground font-light mb-3">Întrebări despre cookie-uri: <a href="mailto:zerowaste@cjilfov.ro" className="text-lime">zerowaste@cjilfov.ro</a></p>
+=======
+            <p className="text-muted-foreground font-light mb-3">Întrebări despre cookie-uri: <a href="mailto:dpo@cjilfov.ro" className="text-lime">dpo@cjilfov.ro</a></p>
+>>>>>>> 2700d210ff8d54ea32bff9869311f673153ee822
           </div>
         )}
       </main>

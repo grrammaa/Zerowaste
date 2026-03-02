@@ -7,7 +7,10 @@ const FormSection = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [validationError, setValidationError] = useState<string | null>(null);
+<<<<<<< HEAD
   const [gdprChecked, setGdprChecked] = useState(false);
+=======
+>>>>>>> 2700d210ff8d54ea32bff9869311f673153ee822
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -210,6 +213,7 @@ const FormSection = () => {
 
                 {/* GDPR */}
                 <div className="flex items-start gap-3 p-4 rounded-lg" style={{ background: 'hsl(150 36% 9% / 0.5)', border: '1px solid hsl(40 33% 93% / 0.08)' }}>
+<<<<<<< HEAD
                   <input
                     type="checkbox"
                     id="gdpr"
@@ -220,16 +224,24 @@ const FormSection = () => {
                     onChange={(e) => setGdprChecked(e.target.checked)}
                   />
                   <label htmlFor="gdpr" className="text-[0.82rem] leading-relaxed cursor-pointer" style={{ color: 'hsl(40 33% 93% / 0.45)' }}>
+=======
+                  <input type="checkbox" name="gdpr" required className="gdpr-checkbox" />
+                  <label className="text-[0.82rem] leading-relaxed" style={{ color: 'hsl(40 33% 93% / 0.45)' }}>
+>>>>>>> 2700d210ff8d54ea32bff9869311f673153ee822
                     {t(
                       'Sunt de acord cu prelucrarea datelor cu caracter personal de către Consiliul Județean Ilfov, în scopul de a fi contactat în legătură cu proiectul Parcul Natural Zer0 Waste. Datele vor fi stocate timp de 12 luni. Am citit și accept',
                       'I agree to the processing of my personal data by Ilfov County Council for the purpose of being contacted regarding the Zer0 Waste Natural Park project. Data will be stored for 12 months. I have read and accept the'
                     )}
+<<<<<<< HEAD
                     <a
                       href="/privacy"
                       target="_blank"
                       className="text-lime text-[0.82rem]"
                       onClick={(e) => e.stopPropagation()}
                     >
+=======
+                    <a href="/privacy" target="_blank" className="text-lime text-[0.82rem]">
+>>>>>>> 2700d210ff8d54ea32bff9869311f673153ee822
                       {t(' Politica de confidențialitate.', ' Privacy Policy.')}
                     </a>
                   </label>
